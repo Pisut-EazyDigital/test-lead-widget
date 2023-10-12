@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="default.css" />
+    <script type="text/javascript" src="feed.js"></script>
+  </head>
+  <body>
+    <h1>SHOW IN NEW WINDOW</h1>
+    <button
+      id="window"
+      onclick="showFeed('230601', '', openNewWindowLeadLink, '', 'width: 800px; height: 600px')"
+    >
+      Click
+    </button>
+    <h1>SHOW IN NEW MODEL</h1>
+    <button
+      id="model"
+      onclick="showFeed('230601', '', modalLeadLink, '', 'width: 100%; height: 600px')"
+    >
+      Click
+    </button>
+    <h1>SHOW IN IFRAME</h1>
+    <button
+      id="window"
+      onclick="showFeed('230601', '', WrappedIFrame, 'output', 'width: 100%; height: 600px')"
+    >
+      Click
+    </button>
+    <h1>SHOW IN INLINE DIV</h1>
+    <button
+      id="window"
+      onclick="showFeed('230601', '', WrappedInLine, 'output', 'width: 100%; height: 600px')"
+    >
+      Click
+    </button>
+    <hr />
+    <div id="output"></div>
+  </body>
+</html>

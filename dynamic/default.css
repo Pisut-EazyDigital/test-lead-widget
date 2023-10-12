@@ -1,0 +1,52 @@
+.feed_modal { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--black);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+}
+
+.feed_modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.feed_modal .modal_dialog {
+  position: relative;
+  border-radius: 5px;
+  background: white;
+  overflow: auto;
+  cursor: default;
+}
+
+.feed_modal .modal_dialog > * {
+  padding: 1rem;
+}
+.feed_modal .modal_header,
+.feed_modal .modal_footer {
+  background: lightgray
+}
+.feed_modal .modal_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px black;
+}
+.feed_modal .modal_header .modal_close {
+  font-size: 1.5rem;
+}
+.feed_modal p + p {
+  margin-top: 1rem;
+}
+.feed_modal .modal_content {
+  border: solid 1px black;
+}
